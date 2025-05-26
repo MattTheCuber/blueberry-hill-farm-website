@@ -21,19 +21,7 @@ body {
   gap: 128px;
 }
 
-@media (width <= 1000px) {
-  .header {
-    flex-direction: column;
-    gap: 32px;
-  }
-}
-
-.logo {
-  height: 256px;
-}
-
 .title {
-  font-size: 64px;
   margin: 24px 0px;
 }
 
@@ -45,7 +33,6 @@ body {
 }
 
 .subtitle {
-  font-size: 24px;
   text-align: center;
 }
 
@@ -56,7 +43,6 @@ body {
   background-color: #1877f2;
   color: #ffffff;
   font-weight: 600;
-  font-size: 24px;
   text-decoration: none;
   padding: 16px 32px;
   border-radius: 999px;
@@ -73,8 +59,6 @@ body {
 }
 
 .facebook-icon {
-  width: 28px;
-  height: 28px;
   margin-right: 8px;
   flex-shrink: 0;
 }
@@ -92,4 +76,55 @@ footer {
   padding: 4px 0px;
   text-align: center;
   background-color: var(--blueberry-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .logo {
+    height: 384px;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .facebook-button {
+    font-size: 2.5rem;
+  }
+
+  .facebook-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    height: 256px;
+  }
+
+  .title {
+    font-size: 3.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .facebook-button {
+    font-size: 1.5rem;
+  }
+
+  .facebook-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }
